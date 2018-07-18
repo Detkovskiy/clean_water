@@ -1,0 +1,29 @@
+.work-list {
+  margin: 0 0 26px;
+  padding-left: 26px;
+  line-height: 16px;
+  font-size: 14px;
+
+  &--two {
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+
+.work-item {
+  padding: 7px 0 0 5px;
+  position: relative;
+  list-style-type: none;
+
+  &:before {
+    position: absolute;
+    left: -10px;
+    top: 11px;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: $blue-color;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,17 @@
+.about__text {
+  text-align: justify;
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 21px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .about__text {
+    padding-left: 14px;
+  }
+}

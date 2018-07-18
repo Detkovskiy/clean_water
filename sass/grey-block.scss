@@ -1,0 +1,24 @@
+.grey__block {
+  background-color: $grey-color;
+}
+
+.grey-p {
+  padding-left: 10px;
+  padding-bottom: 12px;
+  margin: 6px 0;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: justify;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .grey-p {
+    padding-left: 41px;
+    padding-right: 35px;
+    text-align: inherit;
+  }
+}
