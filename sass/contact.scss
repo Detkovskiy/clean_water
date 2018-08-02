@@ -4,6 +4,8 @@
 
 .contact-list {
   margin-bottom: 40px;
+  font-family: $main-font, sans-serif;
+  font-weight: normal;
 }
 
 .contact-tel,
@@ -30,6 +32,8 @@
 }
 
 .mail-list {
+  font-family: $main-font, sans-serif;
+  font-weight: normal;
   line-height: 16px;
 
   & li:nth-child(even) {

@@ -2,11 +2,16 @@ footer {
   background-color: $blue-color;
 }
 
+.footer-info {
+  font-family: $main-font, sans-serif;
+  font-weight: normal;
+}
+
 .footer-tittle {
   margin-bottom: 40px;
-  padding-top: 23px;
-  padding-left: 10px;
   font-size: 20px;
+  font-family: $main-font, sans-serif;
+  font-weight: normal;
   display: inline-block;
   text-transform: uppercase;
   color: $white-color;
@@ -14,7 +19,6 @@ footer {
 
 .footer-address,
 .footer-tel {
-  margin: 0 0 30px 0;
   padding: 0;
   text-align: right;
   list-style: none;
@@ -36,37 +40,47 @@ footer {
 
 .footer-address {
   padding-bottom: 10px;
-  border-bottom: 3px solid $white-color;
+  border-bottom: 4px solid $white-color;
 }
 
 @media (min-width: 768px) {
+  .footer-tittle {
+    margin-bottom: 0;
+  }
+
   .footer-info {
     display: flex;
-    justify-content: center;
+    flex-grow: 2;
+    justify-content: space-around;
   }
 
   .footer-address {
-    margin-right: 120px;
     padding-bottom: 0;
     padding-right: 33px;
     line-height: 18px;
     border-bottom: none;
-    border-right: 3px solid $white-color;
+    border-right: 4px solid $white-color;
   }
 
   .footer-tel {
     margin-right: 15px;
     padding-right: 21px;
     line-height: 18px;
-    border-right: 3px solid $white-color;
+    border-right: 4px solid $white-color;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-address {
+    margin-right: 120px;
+  }
+
+  .footer-info {
+    justify-content: flex-end;
   }
 }
 
 @media (min-width: 1366px) {
-  .footer-tittle {
-    margin-bottom: 0;
-  }
-
   .footer-info {
     justify-content: flex-end;
   }

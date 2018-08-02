@@ -4,12 +4,14 @@ header {
 
 .header_tel {
   padding: 0;
-  margin: 0;
+  margin: 0 15px 0;
   list-style: none;
   text-align: right;
   z-index: 99999;
 
   & li {
+    font-family: $main-font, "Arial", sans-serif;
+    font-weight: normal;
     margin-bottom: 5px;
   }
 }
@@ -24,12 +26,11 @@ header {
 
 .header_contact-list {
   position: relative;
-  margin: 36px 0 20px;
   height: 63px;
   list-style: none;
   color: $white-color;
-  font-size: 17px;
-  line-height: 19px;
+  font-size: 18px;
+  line-height: 16px;
 
   &:first-child::after {
     position: absolute;
@@ -48,7 +49,9 @@ header {
   }
 
   & li {
-    margin-bottom: 5px;
+    font-family: $main-font, "Arial", sans-serif;
+    font-weight: normal;
+    margin-bottom: 9px;
 
     &:last-child {
       margin-bottom: 0;
@@ -60,7 +63,6 @@ header {
   color: $white-color;
   text-decoration: none;
   cursor: pointer;
-  font-family: $main-font, "Arial", sans-serif;
 }
 
 .header-img {
@@ -78,11 +80,12 @@ header {
 @media (min-width: 600px) {
   .logo {
     width: 320px;
-    padding-top: 24px;
+    padding-top: 20px;
   }
 
   .header__contact {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 }
@@ -105,7 +108,7 @@ header {
   .header_contact-list {
     margin-right: 15px;
     padding-right: 20px;
-    border-right: 3px solid $white-color;
+    border-right: 4px solid $white-color;
   }
 }
 
@@ -115,7 +118,9 @@ header {
   }
 
   .main-menu-container {
-    border-top: 2px solid #c8e1f8;
+    height: 54px;
+    background: #2344a8;
+    border-top: 4px solid #c8e1f8;
   }
 
   .yellow li {
@@ -125,7 +130,7 @@ header {
       top: 3px;
       display: inline-block;
       content: '';
-      width: 3px;
+      width: 2px;
       height: 17px;
       background-color: $white-color;
       position: relative;
@@ -187,7 +192,7 @@ header {
       content: '';
       display: block;
       width: 373px;
-      height: 49px;
+      height: 50px;
       background: url(/img/bg_menu.png) no-repeat;
       background-size: 100% 107%;
     }
@@ -207,21 +212,6 @@ header {
 }
 
 @media (min-width: 1100px) {
-  /*.header__info {
-    &:before {
-      position: absolute;
-      display: block;
-      content: '';
-      right: 77px;
-      width: 460px;
-      height: 430px;
-      background: url(/img/tr.png) no-repeat center;
-      top: -29px;
-      background-size: 100%;
-      z-index: 1;
-    }
-  }*/
-
   .header_tel {
     right: 210px;
     top: 42px;

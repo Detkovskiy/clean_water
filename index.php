@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -18,16 +19,19 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.min.css" media="all" />
   <link rel="stylesheet" type="text/css" href="css/style.min.css" media="all" />
   <link rel="stylesheet" href="./css/jetmenu.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+    <script src="js/main.js"></script>
 
   <link rel="icon" href="favicon.png" type="image/png">
 
-  <title>НПЦ Чистая Водв</title>
+  <title>НПЦ Чистая Вода</title>
 </head>
-<body>
+<body id="index">
   <div class="container">
     <header>
       <div class="header__info">
-        <img class="header-img" src="img/bh_2.jpg" alt="">
+        <img class="header-img" src="img/bh_line.jpg" alt="">
 
         <div class="wrapper  wrapper--header">
           <ul class="header_tel">
@@ -37,32 +41,36 @@
           </ul>
         </div>
       </div>
-      <div class="wrapper  wrapper--header">
-        <div class="header__contact">
-          <picture>
-            <img class="logo" src="img/logo.png" alt="">
-          </picture>
-          <ul class="header_contact-list">
-            <li>Санкт-Петербург</li>
-            <li><a class="header_contact-link" href="#">ул. Мельничная, д. 18, лит. А</a></li>
-            <li><a class="header_contact-link" href="mailto:office@chistaya-voda.spb.ru">office@chistaya-voda.spb.ru</a></li>
-          </ul>
+
+      <div id="top_nav">
+        <div class="wrapper  wrapper--header">
+          <div class="header__contact">
+            <picture>
+              <img class="logo" src="img/logo.png" alt="">
+            </picture>
+            <ul class="header_contact-list">
+              <li>Санкт-Петербург</li>
+              <li><a class="header_contact-link" href="#">ул. Мельничная, д. 18, лит. А</a></li>
+              <li><a class="header_contact-link" href="mailto:office@chistaya-voda.spb.ru">office@chistaya-voda.spb.ru</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="main-menu-container">
+          <div class="inner  inner--img">
+            <nav role="navigation">
+              <ul id="jetmenu" class="jetmenu yellow">
+                <li class="js_scroll_menu" href="#index" data-scroll-block="#index"><a>Главная</a></li>
+                <li><a class="js_scroll_menu" href="#about" data-scroll-block="#about">О компании</a></li>
+                <li><a class="js_scroll_menu" href="#services" data-scroll-block="#services">Услуги</a></li>
+                <li><a class="js_scroll_menu" href="#partners" data-scroll-block="#partners">Проекты</a></li>
+                <li><a class="js_scroll_menu" href="#contacts" data-scroll-block="#contacts">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
 
-      <div class="main-menu-container">
-        <div class="inner  inner--img">
-          <nav role="navigation">
-            <ul id="jetmenu" class="jetmenu yellow">
-              <li class="js_scroll_menu"><a>Главная</a></li>
-              <li><a class="js_scroll_menu" href="#about" data-scroll-block="#about">О компании</a></li>
-              <li><a class="js_scroll_menu" href="#services" data-scroll-block="#services">Услуги</a></li>
-              <li><a class="js_scroll_menu" href="#partners" data-scroll-block="#partners">Проекты</a></li>
-              <li><a class="js_scroll_menu" href="#contacts" data-scroll-block="#contacts">Контакты</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
     </header>
 
     <section id="services">
@@ -108,7 +116,7 @@
         <div class="wrapper">
           <p class="grey-p">ООО «НПЦ «Чистая Вода» проводит работы по комплексной очистке канализационных сооружений и сетей с промывкой трубопроводов механическим и гидромеханическим способом с применением необходимой спецтехники.</p>
           <p class="grey-p">Предприятие оснащено собственным автопарком канало-промывочных и илососных машин на базе КАМАЗ и МАЗ, выполняющими прочистку трубопроводов различных диаметров и откачку канализационных колодцев и отстойников вакуумно-механическим способом.</p>
-          <p class="grey-p">ООО «НПЦ «Чистая Вода» на постоянной основе выполняет работы по текущему сервисно-эксплуатационному обслуживанию инженерных сетей и сооружений на территории таких предприятий, как: ОАО «Адмиралтейские Верфи», ОАО МЗ «Арсенал», ОАО «Большой Гостиный Двор», ООО «КНАУФ ГИПС КОЛПИНО», Апраксин Двор, ЗАО «Филип Моррис Ижора», и других крупных предприятий Санкт-Петербурга и Ленинградской области.</p>
+          <p class="grey-p">ООО «НПЦ «Чистая Вода» на постоянной основе выполняет работы по текущему сервисно-эксплуатационному обслуживанию инженерных сетей и сооружений на территории таких предприятий, как: <span class="name">ОАО «Адмиралтейские Верфи»</span>, <span class="name">ОАО МЗ «Арсенал»</span>, <span class="name">ОАО «Большой Гостиный Двор»</span>, <span class="name">ООО «КНАУФ ГИПС КОЛПИНО»</span>, <span class="name">Апраксин Двор</span>, <span class="name">ЗАО «Филип Моррис Ижора»</span>, и других крупных предприятий Санкт-Петербурга и Ленинградской области.</p>
         </div>
       </article>
     </section>
@@ -119,7 +127,7 @@
 
         <p class="about__text">ООО «НПЦ «Чистая Вода» это современное, динамично развивающееся предприятие с квалифицированным и опытным персоналом, и уже зарекомендовавшее себя на рынке строительства и проектных услуг как ответственный и высококачественный исполнитель. Нашим предприятием с успехом применяются как многократно зарекомендовавшие себя традиционные технологии, так и элементы новых современных технологий для строительства и эксплуатации промышленно-гражданских объектов.
         </p>
-        <p class="about__text">ООО «НПЦ «Чистая Вода» является действующим членом саморегулируемых организаций (СРО) Ассоцияция «Центр объединения строителей «СФЕРА А» и Ассоциации «Объединения проектировщиков «Проект Сити» и имеет все необходимые допуски и лицензии для производства проектных, эксплуатационных и строительно-монтажных работ на объектах реконструкции, модернизации и капитального строительства.
+        <p class="about__text">ООО «НПЦ «Чистая Вода» является действующим членом саморегулируемых организаций (СРО) Ассоцияция «Центр объединения строителей <span class="name">«СФЕРА А»</span> и Ассоциации «Объединения проектировщиков «Проект Сити» и имеет все необходимые допуски и лицензии для производства проектных, эксплуатационных и строительно-монтажных работ на объектах реконструкции, модернизации и капитального строительства.
         </p>
 
         <h3 class="title_h3">Основные виды выполняемых работ и услуг:</h3>
@@ -207,54 +215,54 @@
         <div class="partners-list">
           <div class="partners-item">
             <h2 class="partners-tittle">АО «АДМИРАЛТЕЙСКИЕ ВЕРФИ»</h2>
-            <p class="text_center">Комплексная очистка канализационных сетей с очисткой колодцев.</p>
+            <p>Комплексная очистка канализационных сетей с очисткой колодцев.</p>
           </div>
 
           <div class="partners-item">
             <h2 class="partners-tittle  partners-tittle--padding">ООО «ЖИЛКОМСЕРВИС АПРАКСИН ДВОР»</h2>
-            <p class="text_center">Комплексная очистка канализационных сетей с очисткой колодцев.</p>
+            <p>Комплексная очистка канализационных сетей с очисткой колодцев.</p>
           </div>
 
           <div class="partners-item">
             <h2 class="partners-tittle">ООО «КНАУФ ГИПС КОЛПИНО»</h2>
-            <p>Ремонт, эксплуатационное и техниче- ское обслуживание водопроводных и канализационных сетей;
-             <br> Выполнение строительно-монтажных работ по устройству сборных ж\б колодцев и монолитных сооружений для сетей сбора ливневой воды</p>
+            <p>Ремонт, эксплуатационное и техническое обслуживание водопроводных и канализационных сетей;
+             <br>Выполнение строительно-монтажных работ по устройству сборных ж\б колодцев и монолитных сооружений для сетей сбора ливневой воды</p>
           </div>
 
           <div class="partners-item">
             <h2 class="partners-tittle">ООО «АВРОРАСТРОЙ»</h2>
-            <p class="text_justify">Комплексная прочистка сетей канализа- ции.</p>
+            <p>Комплексная прочистка сетей канализации.</p>
           </div>
 
           <div class="partners-item">
             <h2 class="partners-tittle">НАО «СВЕЗА УСТЬ-ИЖОРА»</h2>
-            <p class="text_justify">Выполнение строительно-монтажных работ по модернизации комплекса канализационных сетей.</p>
-            <p class="text_justify">Комплексная очистка канализационных сетей</p>
+            <p>Выполнение строительно-монтажных работ по модернизации комплекса канализационных сетей.</p>
+            <p>Комплексная очистка канализационных сетей</p>
           </div>
 
           <div class="partners-item">
             <h2 class="partners-tittle">ООО «ГИПЕРТЕХНОЛОДЖИ»</h2>
-            <p class="text_justify">Реконструкция сетей пожарного водопровода на территории табачной фабрики ЗАО «Филип Моррис Ижора». Планово-профилактическое и аварий- ное обслуживание комплекса инженер- ных сетей и оборудования для очистных сооружений.</p>
+            <p>Реконструкция сетей пожарного водопровода на территории табачной фабрики ЗАО «Филип Моррис Ижора». Планово-профилактическое и аварийное обслуживание комплекса инженерных сетей и оборудования для очистных сооружений.</p>
           </div>
 
           <div class="partners-item">
             <h2 class="partners-tittle">ООО «ЖБИ-1»</h2>
-            <p class="text_justify">Комплексное обслуживание систем очистки хоз.бытовых стоков и блока КНС-1</p>
+            <p>Комплексное обслуживание систем очистки хоз.бытовых стоков и блока КНС-1</p>
           </div>
 
           <div class="partners-item">
             <h2 class="partners-tittle">ООО «ЭНЕРГОПРОМИНВЕСТ»</h2>
-            <p class="text_justify">Устройство защитных футляров из труб ПНД для участков электросетей КЛ-10 кВ методом бестраншейной прокладки (ГНБ).</p>
+            <p>Устройство защитных футляров из труб ПНД для участков электросетей КЛ-10 кВ методом бестраншейной прокладки (ГНБ).</p>
           </div>
 
           <div class="partners-item">
             <h2 class="partners-tittle">ЗАО «ДСК-3»</h2>
-            <p class="text_justify">Монтаж участков хоз.-питьевого водопровода для сетей городского водоснабжения</p>
+            <p>Монтаж участков хоз.-питьевого водопровода для сетей городского водоснабжения</p>
           </div>
 
           <div class="partners-item">
             <h2 class="partners-tittle">ООО «ЕвроТрансСтрой»</h2>
-            <p class="text_justify">Эксплуатация комплексов локальных очистных сооружений (ЛОС) на участ- ках действующих автомобильных дорог общего пользования федерального значения в Ленинградской и Псковской областях.</p>
+            <p>Эксплуатация комплексов локальных очистных сооружений (ЛОС) на участках действующих автомобильных дорог общего пользования федерального значения в Ленинградской и Псковской областях.</p>
           </div>
 
         </div>
@@ -265,7 +273,7 @@
       <div class="wrapper  wrapper--contact">
         <h2 class="main-tittle  main-tittle--h2  main-tittle--contact"><span class="tittle  tittle--h2">Контакты</span></h2>
         <div class="contact">
-          <div id="map" class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa92bbc4ead46e55b966dfe1e64efe3d6e26eded9c96cc1fc572ad9bcafcfb1f7&amp;width=580&amp;height=380&amp;lang=ru_RU&amp;scroll=true"></script></div>
+          <div id="map" class="map"><script defer type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa92bbc4ead46e55b966dfe1e64efe3d6e26eded9c96cc1fc572ad9bcafcfb1f7&amp;width=580&amp;height=380&amp;lang=ru_RU&amp;scroll=true"></script></div>
           <div class="contact-info" itemscope itemtype="http://schema.org/Organization">
             <div class="contact-list">
               <ul class="contact-tel">
@@ -316,14 +324,40 @@
     </footer>
   </div>
 
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-<script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
-<script src="js/main.js"></script>
-<script type="text/javascript" src="./js/jetmenu.js"></script>
-<script type="text/javascript">
+<script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+<script defer type="text/javascript" src="./js/jetmenu.js"></script>
+<script defer type="text/javascript">
   jQuery(document).ready(function(){
     $().jetmenu();
   });
 </script>
+
+
+  <div type="button" data-modal="modal-9" class="email-bt md-trigger">
+    <div class="text-call">
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+      <span>Обратная<br>связь</span>
+    </div>
+  </div>
+
+  <div class="md-modal md-effect-9" id="modal-9">
+    <div class="md-content">
+      <h3>Обратная связь</h3>
+      <div>
+        <form action="./form_action/send.php" method="post">
+          <input name="name" placeholder="Ваше имя" class="name" required/>
+          <input name="emailaddress" placeholder="Ваш email" class="email" type="email" required/>
+          <textarea rows="4" cols="50" name="subject" placeholder="Текст сообщения" class="message" required></textarea>
+          <input type="hidden" name="position" value="Обратная связь" />
+          <input name="submit" class="btn" type="submit" value="Отправить" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="md-overlay"></div>
+
+  <script defer src="js/classie.js"></script>
+  <script defer src="js/modalEffects.js"></script>
 </body>
 </html>

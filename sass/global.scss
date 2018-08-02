@@ -6,7 +6,6 @@ body {
   margin: 0;
   min-width: 320px;
   font-family: $main-font, "Arial", sans-serif;
-  font-weight: 400;
   background: $white-color;
 }
 
@@ -33,53 +32,63 @@ h3  {
   }
 }
 
-@font-face {
-  font-family: 'Gotham Pro';
-  src: url('/font/GothamPro.eot');
-  src: local('Gotham Pro'), local('GothamPro'),
-  url('/font/GothamPro.eot?#iefix') format('embedded-opentype'),
-  url('/font/GothamPro.woff') format('woff'),
-  url('/font/GothamPro.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+.name {
+  display: inline-block;
+}
+
+@media (min-width: 769px) {
+  #top_nav {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: #2244a8;
+    height: 215px;
+  }
 }
 
 @font-face {
-  font-family: 'Gotham Pro Bold';
-  src: url('/font/GothamPro-Bold.eot');
-  src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
-  url('/font/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
-  url('/font/GothamPro-Bold.woff') format('woff'),
-  url('/font/GothamPro-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+  font-family: 'Conv_GothaProBla';
+  src: url('../font/black/GothaProBla.eot');
+  src: url('../font/black/GothaProBla.woff') format('woff'),
+       url('../font/black/GothaProBla.ttf') format('truetype'),
+       url('../font/black/GothaProBla.svg') format('svg');
 }
 
 @font-face {
-  font-family: 'Gotham Pro Black';
-  src: url('/font/GothamPro-Black.eot');
-  src: local('Gotham Pro Black'), local('GothamPro-Black'),
-  url('/font/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
-  url('/font/GothamPro-Black.woff') format('woff'),
-  url('/font/GothamPro-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
+  font-family: 'Conv_tornadoc-bold';
+  src: url('../font/tornadoc-bold.eot');
+  src: url('../font/tornadoc-bold.woff') format('woff'),
+       url('../font/tornadoc-bold.ttf') format('truetype'),
+       url('../font/tornadoc-bold.svg') format('svg');
 }
 
 @font-face {
-  font-family:"Tornado";
-  src:url("/font/Tornado.eot?") format("eot"),
-  url("/font/Tornado.woff") format("woff"),
-  url("/font/Tornado.ttf") format("truetype"),
-  url("/font/Tornado.svg#Tornado")
-  format("svg");
-  font-weight:normal;
-  font-style:normal;
+  font-family: 'Conv_GothaProReg';
+  src: url('../font/reg/GothaProReg.eot');
+  src: url('../font/reg/GothaProReg.woff') format('woff'),
+       url('../font/reg/GothaProReg.ttf') format('truetype'),
+       url('../font/reg/GothaProReg.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Conv_GothaProBol';
+  src: url('../font/bold/GothaProBol.eot');
+  src: url('../font/bold/GothaProBol.woff') format('woff'),
+       url('../font/bold/GothaProBol.ttf') format('truetype'),
+       url('../font/bold/GothaProBol.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'Conv_GothaProLig';
+  src: url('../font/light/GothaProLig.eot');
+  src: url('../font/light/GothaProLig.woff') format('woff'),
+       url('../font/light/GothaProLig.ttf') format('truetype'),
+       url('../font/light/GothaProLig.svg') format('svg');
 }
 
 @font-face {
   font-family:"TornadoC-Bold";
-  src: url("/font/Tornado.ttf") format("truetype");
+  src: url("/font/tornadoc.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }

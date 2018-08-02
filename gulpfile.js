@@ -69,7 +69,7 @@ gulp.task("images", function() {
 // настройка "живого сервера"
 gulp.task("serve", function() {
   server.init({
-    server: "build"
+    proxy: "localhost:8888/cl_watter/build/"
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);

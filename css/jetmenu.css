@@ -22,12 +22,12 @@
 }
 .jetmenu > li > a{
 	/*padding: 20px 24px;*/
-    padding-top: 13px;
+    padding-top: 16px;
     padding-left: 0;
     padding-right: 27px;
     margin-right: 31px;
 	font-size: 18px;
-    font-family: "TornadoC-Bold", sans-serif;
+    font-family: 'Conv_tornadoc-bold', sans-serif;
     color: #ffffff;
 	text-decoration: none;
 	display: inline-block;
@@ -337,7 +337,8 @@
 	height: 50px;
 	cursor: pointer;
 	color: #fff;
-	background: #36a7e9;
+    background: #2244a8;
+    border-top: 1px solid #c8e1f8;
 }
 .jetmenu > li.showhide span.title{
 	margin: 14px 0 0 25px;
